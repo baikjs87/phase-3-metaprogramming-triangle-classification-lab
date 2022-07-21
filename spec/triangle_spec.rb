@@ -21,7 +21,7 @@ describe Triangle do
       expect(Triangle.new(0.4, 0.6, 0.3).kind).to eq(:scalene)
     end
   
-    it 'raises an error for triangles with no size' do
+    it 'raises an error for triangles with no side' do
       expect { Triangle.new(0, 0, 0).kind }.to raise_error(Triangle::TriangleError)
     end
   
